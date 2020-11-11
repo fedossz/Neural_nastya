@@ -271,7 +271,7 @@ def main():
           conn.commit()
           bot.send_message(message.chat.id, random.choice(delete_hist_replies))
           return
-        elif (message.text.lower().startswith('/adj')) & (message.chat.id == 504898099):
+        elif (message.text.lower().startswith('/adj')) & (message.chat.id == your_id):
           #gen_temp, gen_k, gen_p, gen_length = message.text.lower().split()[-4:]
           gen_temp = float(message.text.lower().split()[1])
           gen_k = int(message.text.lower().split()[2])
